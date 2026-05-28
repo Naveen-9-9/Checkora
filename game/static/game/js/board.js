@@ -3366,6 +3366,7 @@ if (leaveConfirmNo) leaveConfirmNo.addEventListener('click', () => {
                 } else {
                     // Quick tap -> trigger default click/tap behavior
                     onClick(touchDragSrc.r, touchDragSrc.c);
+                    e.preventDefault();
                 }
 
                 // Reset state
