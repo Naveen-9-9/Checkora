@@ -1279,10 +1279,16 @@ body {
     box-shadow: 0 12px 48px rgba(0, 0, 0, 0.8);
     width: 90%;
     max-width: 480px;
-    max-height: min(90vh, fit-content);
+    max-height: 90vh;
     overflow-y: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
     box-sizing: border-box;  
     position: relative;
+}
+
+.promo-dialog::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
 }
 
 .promo-title {
