@@ -1333,7 +1333,7 @@ body {
   display: none; 
 }
 
- {
+@media (max-width: 768px) {
   .m-fab {
     display: flex;
     flex-direction: column;
@@ -1405,7 +1405,7 @@ body {
     /* base look */
     filter: brightness(1.6) contrast(1.3);
 
-    /* anima@media (max-width: 768px)tion only here */
+    /* animation only here */
     animation: logoGlow 2.8s ease-in-out infinite alternate;
 }
 
